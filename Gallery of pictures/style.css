@@ -1,0 +1,252 @@
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.left{
+    width: 300px;
+    height: 100;
+    justify-content: center;
+}
+.img {
+    height: 345px;
+    width: 353px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    height: 80px;
+    color: gray;
+    padding-left: 5px;
+}
+.fa{
+    width: 30px;
+    padding-top: 10px;
+    height: 25px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 25px;
+    color:gray;
+    display:none;
+    border:2px solid grey;
+}
+nav ul {
+    height: 350px;
+    padding-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    list-style: none;
+}
+nav li a{
+    display: block;
+    text-decoration: none;
+    color:gray;
+    margin-top: 20px;
+}
+ul {
+    list-style: none;
+}
+.icon{
+    padding-top: 10px;
+    padding-left: 0px;
+    height: 50px;
+    text-align: center;
+}
+.icon ul{
+    list-style: none;
+    height: 40px;
+    padding: 0px;
+}
+.icon li {
+    float: left;
+    color: gray;
+    border: 2px solid gray;
+    display: block;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.max-height a {
+    display: block;
+    text-decoration: none;
+    color:gray;
+    height: 20px;
+    width: 23px;
+    text-align: center;
+    padding-top: 2px;
+}
+.fb:hover{
+    background-color: blue;
+}
+.gl:hover{
+    background-color: red;
+}
+.be:hover{
+    background-color: rgb(0, 110, 255);
+}
+.rss:hover {
+    background-color: yellow;
+}
+.max-height a:hover{
+    color: white;
+}
+.foother{
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 14px;
+}
+p{
+    margin:0px;
+}
+p a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+/*end of left*/
+.right{
+    display: flex;
+    flex-direction: row;
+    display: block;
+    overflow-y: scroll;
+    width: 100%;
+    padding-left: 24px;
+}
+.all{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.one a{
+    text-decoration: none;
+    color: black; 
+    height: 345px;
+    width: 343px;
+}
+.one,
+.one * {
+	box-sizing: border-box;
+}
+.one {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.one img {
+	max-width: 100%;
+}
+.one .box {
+	display: block;
+}
+.one .box {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	color: grey;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    
+}
+.one:hover .box,
+.one.active .box {
+	opacity: 1;
+}
+.one .box-hover {
+	text-align: center;
+	font-size: 13px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-top: 2px solid rgba(7, 1, 1, 0.829);
+    border-bottom: 2px solid rgba(7, 1, 1, 0.829);
+}
+/*end */
+@media screen and (max-width: 992px) {
+    body{
+        margin:0px;
+    }
+    .left{
+        width:100%;
+    }
+    nav li{
+        display: none;
+    }  
+    .icon {
+        display: none;
+    }
+    .footer {
+        display:none;
+    } 
+    .fa{
+        display: block;
+    }
+    .header{
+        width: 700px;
+        padding-left: 30px;
+
+    }
+    .main {
+       display: flex;
+       flex-direction: column;
+    }
+    .right{
+        display: block;
+        width: 100%;
+        padding: 0px;
+        overflow-y: unset;
+    }
+    .img {
+        width: 384px;
+    }
+    .all{
+        display: block;
+        width:100%
+    }
+    .one{
+        float:left;
+    }
+}
+@media only screen and (max-width: 320px) {
+    body {
+        margin: 0;
+    }
+    .main{
+        width: 100%;
+        height:100%;
+    }
+    .header{
+        width: 320px;
+    }
+    .fa{
+        margin-left: 0px;
+        margin-right: 30px;
+    }
+    .img {
+        width:310px;
+    }
+    .one.active .box2 {
+        display: block;
+    }
+    .right {
+        text-align: center;
+    }    
+}
