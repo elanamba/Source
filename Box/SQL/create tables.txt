@@ -1,0 +1,59 @@
+CREATE TABLE game(
+
+    id integer AUTO_INCREMENT,
+    name varchar(1000),
+    category varchar(255),           
+    time_frame varchar(20),
+    group_size varchar(20),                //tuka zgresiv group-size treba da e integer i treba da imam group size max 
+    image_name varchar(255),                  i group siz max 
+    facility_level varchar(255),
+    description text,
+    PRIMARY KEY(id)
+) ENGINE=InnoDB   DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+CREATE TABLE materials(
+
+    id integer AUTO_INCREMENT,
+    name varchar(1000),
+    game_id integer,
+    PRIMARY KEY(id),
+    FOREIGN KEY foreign_key_game_id (game_id) REFERENCES game(id)
+) ENGINE=InnoDB   DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+CREATE TABLE step(
+
+    id integer AUTO_INCREMENT,
+    description text,
+    step_order integer,
+    game_id integer,
+    PRIMARY KEY(id),
+    FOREIGN KEY (game_id) REFERENCES game(id)
+) ENGINE=InnoDB   DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+
+CREATE TABLE user(
+
+    id integer AUTO_INCREMENT,
+    first_name varchar(255),
+    last_name varchar(255),
+    company varchar(255),
+    email varchar(255),                               
+    phone_number integer,
+    numOfEmployees varchar(255),
+    departmen varchar(255),
+    message_user varchar(255),
+    password_user varchar(255),
+    id_game integer,
+    PRIMARY KEY(id),
+) ENGINE=InnoDB   DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT
+
+CREATE TABLE user_game(
+
+    id integer AUTO_INCREMENT,
+    user_id integer,
+    game_id integer,
+    PRIMARY KEY(id),
+    FOREIGN KEY (game_id) REFERENCES game(id),
+    FOREIGN KEY (user_id) REFERENCES user(id)
+    
+) ENGINE=InnoDB   DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT
+	

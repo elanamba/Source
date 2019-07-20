@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+    background: linear-gradient(220deg, rgb(255, 255, 255) 50%, rgb(128, 0, 128) 50%);
+    font-family: 'Raleway', sans-serif;
+}
+.contact-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-trasform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 400px;
+    height: 500px;
+    background: rgba(0,0,0,0,9);
+}
