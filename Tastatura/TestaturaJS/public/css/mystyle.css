@@ -1,0 +1,41 @@
+.img{
+    background-image: url("../img/img.jpeg");
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.one{
+    height: 200px;
+}
+.txt{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: azure;
+}
+.btn{
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    height: 35px;
+    width: 100px;
+    margin-left: 10px;
+}
+.space{
+    background-color: black;
+    height: 35px;
+    width: 320px;
+}
+.m{
+    margin-bottom: 15px;
+    margin-left: 85px;
+}
+.l{
+    margin-bottom: 15px;
+    margin-left: 135px;
+}
+.r{
+    margin-bottom: 15px;
+    margin-left: 244px;
+}
+.s{
+    margin-bottom: 15px;
+    margin-left: 474px;
+}
